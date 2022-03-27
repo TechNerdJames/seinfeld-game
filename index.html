@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Seinfeld Quote Guessing Game</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="container">
+			<h1>Quotes About Nothing</h1>
+			<p>The Seinfeld quote guessing game</p>
+			<img src="/images/seinfeld-logo.png" alt="Seinfeld logo" />
+		</header>
+
+		<div class="display-score">
+			<p>Score: <span id="score">0</span></p>
+		</div>
+		<section class="instructions container">
+			<h3>Instructions</h3>
+			<ol>
+				<li>Click on the "get quote" button to generate a random quote.</li>
+				<li>
+					Guess which character says the generated quote by selecting the
+					character.
+				</li>
+				<li>
+					If you get a score of 5 in a row, you win! If you get a guess wrong,
+					your score returns to 0.
+				</li>
+			</ol>
+		</section>
+
+		<section class="quote-container container">
+			<div class="quote">
+				<div class="quote-content"></div>
+				<button id="get-quote" class="btn">Get Quote</button>
+			</div>
+			<div class="characters">
+				<h3>Guess:</h3>
+				<div class="characters-content">
+					<button class="character btn">Jerry</button>
+					<button class="character btn">George</button>
+					<button class="character btn">Elaine</button>
+					<button class="character btn">Kramer</button>
+				</div>
+			</div>
+		</section>
+
+		<footer></footer>
+	</body>
+</html>

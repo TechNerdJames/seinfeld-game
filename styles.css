@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/*  --------------- General Styles --------------- */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.4;
+	text-align: center;
+	/* background-color: #99bdd9; */
+	background-color: #1a49a4;
+	color: white;
+}
+
+h1 {
+	margin: 0.5em 0;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+h3 {
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+header p {
+	font-size: 1.125rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+}
+
+img {
+	width: 50%;
+	max-width: 400px;
+	margin-bottom: 2em;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+li {
+	margin-bottom: 1rem;
+}
+
+/* --------------- Utilities --------------- */
+.container {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.btn {
+	font-family: 'Lato', sans-serif;
+	background: #fcd71f;
+	color: #e30a23;
+	font-weight: 900;
+	font-size: 0.875rem;
+	border: none;
+	border-radius: 20px;
+	padding: 1em 2.3em;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.correct {
+	background: #50c550;
+	color: white;
+}
+
+.incorrect {
+	background: #e24949;
+	color: white;
+}
+
+/* --------------- Score Display Class Style --------------- */
+.display-score {
+	display: inline-block;
+	border: 1px solid white;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5px;
+}
+
+/*  --------------- Instructions Section Styles */
+.instructions {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+/* --------------- Quote Section Styles --------------- */
+.quote-container {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.quote {
+	margin-bottom: 2rem;
+}
+
+.quote-content p::before {
+	color: white;
+	content: '“';
+	font-size: 3rem;
+	line-height: 0.1em;
+	vertical-align: 0.2em;
+	margin-right: 0.25em;
+}
+
+/* ---------------Characters Div Styles --------------- */
+
+.characters-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	max-width: 430px;
+	margin: 0 auto;
+}
+
+@media (min-width: 48.75em) {
+	.characters-content {
+		display: block;
+		max-width: 960px;
+	}
+
+	.character:not(:last-child) {
+		margin-right: 2em;
+	}
+}
+
+@media (min-width: 62em) {
+	body {
+		font-size: 1.25rem;
+	}
+
+	h1 {
+		font-size: 3.75rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	header p {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+}
