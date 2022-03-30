@@ -3,10 +3,6 @@ const getQuoteBtn = document.querySelector('#get-quote');
 const quoteContent = document.querySelector('.quote-content');
 const instructionsSection = document.querySelector('.instructions');
 const apiUrl = 'https://seinfeld-quotes.herokuapp.com/quotes';
-const jerryBtn = document.querySelector('#jerry');
-const georgeBtn = document.querySelector('#george');
-const elaineBtn = document.querySelector('#elaine');
-const kramerBtn = document.querySelector('#kramer');
 const charactersBtn = document.querySelectorAll('.character');
 const resetBtn = document.querySelector('#reset');
 
