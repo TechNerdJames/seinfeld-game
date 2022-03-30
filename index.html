@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Seinfeld Quote Guessing Game</title>
 		<link rel="stylesheet" href="styles.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script src="script.js" defer></script>
 	</head>
 	<body>
@@ -35,20 +36,28 @@
 
 		<section class="quote-container container">
 			<div class="quote">
-				<div class="quote-content"></div>
+				<p class="quote-content"></p>
 				<button id="get-quote" class="btn">Get Quote</button>
+				<button id="reset" class="btn">Reset</button>
 			</div>
 			<div class="characters">
 				<h3>Guess:</h3>
 				<div class="characters-content">
-					<button class="character btn">Jerry</button>
-					<button class="character btn">George</button>
-					<button class="character btn">Elaine</button>
-					<button class="character btn">Kramer</button>
+					<button id="jerry" class="character btn active">Jerry</button>
+					<button id="george" class="character btn">George</button>
+					<button id="elaine" class="character btn">Elaine</button>
+					<button id="kramer" class="character btn">Kramer</button>
 				</div>
 			</div>
 		</section>
 
-		<footer></footer>
+		<footer>
+			<p>
+				Made using the
+				<a href="https://seinfeld-quotes.herokuapp.com/" target="_blank"
+					>Seinfeld Quotes API</a
+				>
+			</p>
+		</footer>
 	</body>
 </html>
