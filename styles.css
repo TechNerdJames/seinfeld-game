@@ -154,6 +154,7 @@ footer a {
 	margin: 0 auto;
 }
 
+/*  --------------- Media Queries --------------- */
 @media (min-width: 48.75em) {
 	.characters-content {
 		display: block;
