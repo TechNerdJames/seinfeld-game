@@ -2,10 +2,10 @@ const score = document.querySelector('#score');
 const getQuoteBtn = document.querySelector('#get-quote');
 const quoteContent = document.querySelector('.quote-content');
 const instructionsSection = document.querySelector('.instructions');
-const apiUrl = 'https://seinfeld-quotes.herokuapp.com/quotes';
+const seinfeldUrl = 'https://seinfeld-quotes.herokuapp.com/quotes';
 const charactersBtn = document.querySelectorAll('.character');
 const resetBtn = document.querySelector('#reset');
-
+const quoteImg = document.querySelector('.quote-pic');
 let scoreTracker = 0;
 let quote = {};
 
@@ -26,7 +26,7 @@ main();
 
 //Get the quote using axios
 async function fetchQuote() {
-	const response = await axios.get(apiUrl);
+	const response = await axios.get(seinfeldUrl);
 	const quotes = response.data.quotes;
 	// filter quotes to get quotes for the 4 characters
 	const filteredQuotes = quotes.filter((quote) => {
@@ -62,7 +62,6 @@ function submitGuess(e) {
 	if (correct) {
 		enableQuoteBtn();
 		disableCharacterBtns();
-
 		e.target.classList.add('correct', 'opacity');
 		console.log('This is the correct answer');
 		scoreTracker++;
