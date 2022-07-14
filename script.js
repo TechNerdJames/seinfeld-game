@@ -63,15 +63,12 @@ function submitGuess(e) {
 		enableQuoteBtn();
 		disableCharacterBtns();
 		e.target.classList.add('correct', 'opacity');
-		console.log('This is the correct answer');
 		scoreTracker++;
-		// if it returns false, add classes to the button and put the score back to 0
+		// if it returns false, add classes to the button
 	} else {
 		enableQuoteBtn();
 		disableCharacterBtns();
 		e.target.classList.add('incorrect', 'opacity');
-		console.log('This is not the correct answer');
-		scoreTracker = 0;
 	}
 	score.innerText = scoreTracker;
 	win();
@@ -80,7 +77,6 @@ function submitGuess(e) {
 // Check score, if user score is 5, user wins
 function win() {
 	if (scoreTracker === 5) {
-		console.log('you win!');
 		quoteContent.innerText = 'YOU WIN!';
 		quoteContent.style.fontWeight = 700;
 		quoteContent.classList.remove('show');
