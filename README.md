@@ -4,7 +4,7 @@ A responsive web app game based on the characters of one of my favourite tv show
 
 **Link to project:** https://seinfeldgame.netlify.app/
 
-![alt tag](https://github.com/TechNerdJames/allis-cheesecake/blob/main/allischeesecake-screenshot1.png)
+![alt tag](https://github.com/TechNerdJames/seinfeld-game/blob/main/theseinfeldgame-screenshot.png)
 
 ## How It's Made:
 
